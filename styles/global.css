@@ -1,0 +1,242 @@
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Unbounded */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+:root {
+  --white: #fffbf8;
+
+  --orange: #eb6424;
+  --light-orange: #ffece2;
+
+  --grey: #313030;
+  --light-grey: #f3f3f3;
+
+  --disabled: #a8a2a2;
+
+  --red: #db3030;
+  --light-red: #ffb2b2;
+
+  --cursor-dot-size: 0.4rem;
+  --cursor-circle-size: 2.35rem;
+
+  --coloured-btn-red: #ffb2ad;
+  --coloured-btn-green: #aeef98;
+  --coloured-btn-violet: #c3adff;
+  --coloured-btn-mint: #9defca;
+  --coloured-btn-light-blue: #97d9ef;
+}
+
+* {
+  font-family: Montserrat, Unbounded;
+}
+
+body {
+  background-color: var(--white);
+}
+
+h1,
+p {
+  color: var(--grey);
+}
+
+h1::selection,
+h1 > br::selection {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+p::selection,
+span::selection,
+br::selection,
+button::selection,
+i::selection {
+  background-color: var(--light-orange);
+}
+
+.popup::selection {
+  background-color: var(--orange);
+}
+
+/* POP-UP ELEMENT*/
+/* for random */
+.quote-section__quote-wrapper {
+  position: relative;
+  width: 40rem;
+  margin-bottom: 3rem;
+}
+
+/* for category */
+.category-quote-section__generate-placeholder {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section__quote,
+.quote-section__author,
+.quote-section__category {
+  font-family: Unbounded;
+
+  color: var(--grey);
+  border: 3px solid var(--grey);
+
+  transition: ease 300ms;
+}
+
+.quote-section__quote:hover,
+.quote-section__author:hover,
+.quote-section__category:hover {
+  background-color: var(--light-orange);
+}
+
+.quote-section__quote {
+  font-size: 1.25rem;
+  line-height: 2.3rem;
+  text-align: justify;
+
+  padding: 1.4rem 2rem;
+  border-radius: 1.2rem;
+
+  margin-bottom: 1rem;
+}
+
+.quote-section__quote-info {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quote-section__author,
+.quote-section__category {
+  font-size: 1rem;
+  font-weight: 300;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.2rem;
+}
+
+.quote-section__close-btn {
+  position: absolute;
+  top: -12.4%;
+  right: -6%;
+
+  padding: 0.2rem 0.6rem;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: var(--red);
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 2px solid var(--light-red);
+
+  transition: ease 300ms;
+}
+
+.quote-section__close-btn:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.quote-section__author {
+  flex: 1;
+}
+
+.footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.45px solid var(--grey);
+}
+
+.footer__text {
+  font-family: Unbounded;
+  font-weight: 300;
+}
+
+/* PRELOADER */
+.preloader-ellipsis {
+  color: var(--orange);
+  margin-bottom: 1.2rem;
+}
+
+.preloader-ellipsis,
+.preloader-ellipsis div {
+  box-sizing: border-box;
+}
+
+.preloader-ellipsis {
+  /* To show preloader (testing) */
+  /* display: inline-block; */
+
+  display: none;
+
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  z-index: 5;
+}
+
+.preloader-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.preloader-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: preloader-ellipsis1 0.6s infinite;
+}
+
+.preloader-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: preloader-ellipsis2 0.6s infinite;
+}
+
+.preloader-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: preloader-ellipsis2 0.6s infinite;
+}
+
+.preloader-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: preloader-ellipsis3 0.6s infinite;
+}
+
+@keyframes preloader-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes preloader-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+@keyframes preloader-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

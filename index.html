@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotly</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/cursor.css" />
+    <link rel="stylesheet" href="./styles/quote.css" />
+    <link rel="stylesheet" href="./styles/quoteCategory.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <section class="quote-section">
+      <div class="quote-section__wrapper">
+        <h1 class="quote-section__heading hover-target">Get Your Quote!</h1>
+
+        <div class="preloader-ellipsis" data-preloader-random>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="quote-section__placeholder"></div>
+
+        <p class="quote-section__info">
+          Here you can generate a
+          <span>random</span>
+          quote.
+          <br />
+          Feel free to press the button.
+        </p>
+
+        <button class="quote-section__get-btn">
+          <i class="quote-section__get-arrow">&rarr;</i>
+          <span class="quote-section__get-text">random quote .</span>
+        </button>
+
+        <p class="quote-section__instruction">
+          Or choose a category that<br />
+          benefits you! <br />
+          <span>&darr;</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="category-quote-section">
+      <div class="category-quote-section__wrapper">
+        <h1 class="category-quote-section__title">
+          Your Category <br />
+          &Our Quote
+        </h1>
+
+        <div class="preloader-ellipsis" data-preloader-category>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div
+          class="category-quote-section__generate-placeholder"
+          data-generate-placeholder
+        ></div>
+
+        <p class="category-quote-section__description">
+          Press the one you like and let us do the rest.
+        </p>
+
+        <button
+          class="category-quote-section__button"
+          data-generate-by-category
+          disabled
+        >
+          <i class="category-quote-section__button-icon">&rarr;</i>
+          <span class="category-quote-section__button-text">go generate .</span>
+        </button>
+
+        <div
+          class="category-quote-section__placeholder"
+          data-category-placeholder
+        >
+          <div class="category-wrapper"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">Done by: Buhai Matt</p>
+    </footer>
+
+    <script type="module" src="./scripts/generateRandom.js"></script>
+    <script type="module" src="./scripts/cursor.js"></script>
+    <script type="module" src="./scripts/renderCategories.js"></script>
+    <script type="module" src="./scripts/checking.js"></script>
+    <script type="module" src="./scripts/generateByCategory.js"></script>
+    <script type="module" src="./scripts/configuration.js"></script>
+
+  </body>
+</html>

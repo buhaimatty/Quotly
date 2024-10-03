@@ -1,0 +1,34 @@
+.cursor-dot,
+.cursor-circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: var(--cursor-dot-size);
+  height: var(--cursor-dot-size);
+
+  top: calc(var(--cursor-dot-size) / 2 * -1);
+  left: calc(var(--cursor-dot-size) / 2 * -1);
+
+  background-color: var(--orange);
+
+  z-index: 2;
+
+  transition: background-color 300ms ease;
+}
+
+.cursor-circle {
+  width: var(--cursor-circle-size);
+  height: var(--cursor-circle-size);
+
+  top: calc(var(--cursor-circle-size) / 2 * -1);
+  left: calc(var(--cursor-circle-size) / 2 * -1);
+
+  border: 0.125rem solid var(--orange);
+
+  z-index: 1;
+
+  transition: border-color 300ms ease;
+}

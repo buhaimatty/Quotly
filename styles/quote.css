@@ -1,0 +1,94 @@
+.quote-section {
+  padding: 13.6rem 12rem 0 12rem;
+}
+
+.quote-section__wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-section__heading {
+  font-family: Unbounded;
+  font-weight: 500;
+  color: var(--orange);
+
+  font-size: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.quote-section__info,
+.quote-section__info > span {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quote-section__info > span {
+  font-style: italic;
+}
+
+.quote-section__info > span:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.quote-section__get-btn {
+  padding: 0.8rem 4rem;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 18.8%;
+
+  color: var(--orange);
+  background-color: var(--light-orange);
+  border: 3px solid var(--light-orange);
+
+  border-radius: 5rem;
+
+  transition: ease 300ms;
+}
+
+.quote-section__get-btn:hover {
+  cursor: pointer;
+
+  color: var(--orange);
+  background-color: var(--white);
+
+  background-color: var(--white);
+  border: 3px solid var(--orange);
+  box-shadow: 0 10px 0 0 var(--light-orange);
+}
+
+.quote-section__get-text {
+  font-family: Unbounded;
+  font-size: 1.2rem;
+
+  letter-spacing: 0.1rem;
+}
+
+.quote-section__get-arrow {
+  margin-right: 0.6rem;
+  font-size: 1.8rem;
+}
+
+.quote-section__instruction {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2.3rem;
+  line-height: 1.96rem;
+}
+
+.quote-section__instruction > span {
+  font-family: Unbounded;
+  font-weight: 100;
+  font-size: 1.8rem;
+  transition: ease 300ms;
+}
+
+.quote-section__instruction > span:hover {
+  color: var(--orange);
+  font-size: 2.15rem;
+}
